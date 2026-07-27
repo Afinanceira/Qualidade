@@ -1,0 +1,26 @@
+<div class="card-qualidade" style="background: #1a2533; padding: 20px; border-radius: 8px; color: #fff; margin-bottom: 20px;">
+    <h2>💡 Gestão da Pílula de Conhecimento</h2>
+    <p style="color: #a0aec0; font-size: 14px;">Redija a pílula do dia abaixo e publique para disparar aos atendentes.</p>
+    
+    <textarea id="texto-pilula-qualidade" placeholder="Digite aqui a diretriz, regra ou dica de atendimento do dia..." style="width: 100%; height: 100px; background: #0f172a; color: #fff; border: 1px solid #334155; padding: 10px; border-radius: 4px; margin-top: 10px;"></textarea>
+    
+    <button id="btn-publicar-pilula" style="background: #28a745; color: #fff; border: none; padding: 10px 20px; border-radius: 4px; font-weight: bold; cursor: pointer; margin-top: 10px;">
+        🚀 Publicar e Enviar para o Discord
+    </button>
+</div>
+
+<div class="card-status-leitura" style="background: #1a2533; padding: 20px; border-radius: 8px; color: #fff;">
+    <h3>📊 Status de Confirmação da Equipe</h3>
+    <table style="width: 100%; margin-top: 15px; border-collapse: collapse;">
+        <thead>
+            <tr style="border-bottom: 1px solid #334155; text-align: left; color: #a0aec0;">
+                <th style="padding: 8px;">Colaborador</th>
+                <th style="padding: 8px;">Status</th>
+                <th style="padding: 8px;">Horário da Leitura</th>
+            </tr>
+        </thead>
+        <tbody id="tabela-status-leitura">
+            <!-- Os dados serão preenchidos em tempo real pelo Firebase -->
+        </tbody>
+    </table>
+</div>
