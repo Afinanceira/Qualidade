@@ -1,18 +1,18 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+// Importações corretas do Firebase via CDN para o navegador
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+import { getDatabase, ref, push, set, onValue, update } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBtxvlcx4BPrTO-jBgxJFC6qsRq07zhKXg",
-  authDomain: "escala-nova-d596e.firebaseapp.com",
-  databaseURL: "https://escala-nova-d596e-default-rtdb.firebaseio.com",
-  projectId: "escala-nova-d596e",
-  storageBucket: "escala-nova-d596e.firebasestorage.app",
-  messagingSenderId: "612241634323",
-  appId: "1:612241634323:web:729a8ac37184eb92b47be6"
+    apiKey: "SUA_API_KEY_REAL",
+    authDomain: "escala-nova-d596e.firebaseapp.com",
+    databaseURL: "https://escala-nova-d596e-default-rtdb.firebaseio.com",
+    projectId: "escala-nova-d596e",
+    storageBucket: "escala-nova-d596e.appspot.com",
+    messagingSenderId: "SEU_MESSAGING_SENDER_ID",
+    appId: "SEU_APP_ID"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
+const db = getDatabase(app);
+
+export { db, ref, push, set, onValue, update };
